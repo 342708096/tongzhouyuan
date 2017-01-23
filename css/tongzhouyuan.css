@@ -413,3 +413,7 @@ p {
     padding: 90px 0 110px; }
     .masthead h1 {
       font-size: 90px; } }
+.qrcode {
+  background-color:#FFF;
+  padding:5px;
+}
