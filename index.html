@@ -525,6 +525,7 @@
                             <li>微信：</li>
                             <li>
                                 <img style="width:100px;height:100px" src="images/weixinds.jpg">
+                                <div class="qrcode"></div>
                             </li>
                         </ul>
                     </div>
@@ -541,11 +542,15 @@
     </div>
 </footer>
 <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="//cdn.bootcss.com/OwlCarousel2/2.2.0/owl.carousel.min.js"></script>
 <script src="js/scrollmonitor.js"></script>
 <script src="js/smoothscroller.js"></script>
 <script src="js/controller.js"></script>
+<script>
+$('.qrcode').qrcode(location.url);
+</script>
 <!--<script src="//cdn.bootcss.com/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>-->
 <!--<script src="//cdn.bootcss.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"></script>-->
 </body>
