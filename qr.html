@@ -16,6 +16,8 @@
     <link rel="shortcut icon" href="favicon.ico" >
     <style>
         * {
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
         html {
@@ -25,29 +27,50 @@
             background: white;
         }
         body {
-            padding: 3rem;
+            padding: 0.3rem;
         }
         .banner {
-            margin: 0 auto;
-            width: 66.9rem;
-            height: 38rem;
+            margin: -0.3rem -0.3rem 0 -0.3rem;
+            width: 7.5rem;
+            height: 5.44rem;
             display: block;
         }
         a {
            text-decoration: none;
         }
         p {
-            font-size: 1.8rem;
+            margin-top: 0.3rem;
+            font-size: 0.018rem;
+        }
+        .flex {
+            display: flex;
+            display: -webkit-flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .flex-1 {
+            flex-basis: 0;
+            flex-grow: 1;
+            flex-shrink: 1;
         }
     </style>
+    <script>
+        var windowWidth = document.documentElement.clientWidth;
+        document.documentElement.style.fontSize = windowWidth / 750 * 100 + 'px'
+    </script>
 </head>
 <body>
-    <img src="./images/zhengpin.png" alt="" class="banner">
+    <img src="./images/微信图片_20190913204251.png" alt="" class="banner">
     <p>
         您查询的是由北京田川工贸生产基地生产的正牌桶装水，请放心饮用，谢谢支持！
     </p>
     <p>
         服务电话：<strong><a href="tel:010-60532887">010-60532887</a></strong>
+    </p>
+    <p class="flex">
+        <a class="" href="http://mp.weixin.qq.com/s?__biz=MzU1MzkwNTI5Mw==&mid=100000080&idx=1&sn=7767d1ca5a4edc6a31aa91f79ddac700&chksm=7beafcb24c9d75a42fec69f21c558a8044a478cb4ef33fe8f3f16eec52d96c4ac11b689f4ef9&scene=18#wechat_redirect">品牌介绍</a>
+        <a class="" href="http://mp.weixin.qq.com/s?__biz=MzU1MzkwNTI5Mw==&mid=100000092&idx=1&sn=f73d064b724de6fda70b796bded9bc6b&chksm=7beafcbe4c9d75a8c343d7d6927b24e40c23c5aea6ff960fdea725a6cd1ad9bb06cf737a5cf8#rd">维维股份I碱LOVE</a>
+        <a class="" href="http://mp.weixin.qq.com/s?__biz=MzU1MzkwNTI5Mw==&mid=100000072&idx=1&sn=a41b5464f2c0e9294c9c071edec9dcaa&chksm=7beafcaa4c9d75bc53f70ae17c1c3113365f1439757ae33634567b5498a0a4a2f3944bf13fbf&scene=18#wechat_redirect">水生活</a>
     </p>
 </body>
 </html>
